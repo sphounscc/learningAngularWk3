@@ -341,7 +341,11 @@
       </g>
     </svg>
 
-    <span>{{ title }} app is running!</span>
+    <span>{{ name }}'s {{ title }} app is running!</span>
+
+    {{ processContent(contentItem)}}
+
+    
 
     <svg id="rocket-smoke" xmlns="http://www.w3.org/2000/svg" width="516.119" height="1083.632" viewBox="0 0 516.119 1083.632">
       <title>Rocket Ship Smoke</title>
@@ -451,6 +455,9 @@
       </svg>
     </a>
   </div>
+
+
+  <app-content-card *ngFor="let item of contentArray; index as i; first as isFirst" [content]="item" [class.is-first]="isFirst"></app-content-card>
 
   <!-- Footer -->
   <footer>
