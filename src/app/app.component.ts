@@ -18,13 +18,18 @@ export class AppComponent {
         type: 'news'
     }
 
+    contentItem2:Content = {
+      id: 1024,
+      imageUrl:
+      'https://angular.io/assets/images/logos/angular/angular .png',
+          type: 'news'
+      }
+
   contentArray : Content[];
 
   constructor() {
 
     this.contentArray = [this.contentItem];
-    this.contentArray.push(this.contentItem);
-    this.contentArray.push(this.contentItem);
     this.contentArray.push(this.contentItem);
     this.contentArray.push(this.contentItem);
     this.contentArray.push(this.contentItem);

@@ -3,4 +3,5 @@
 
 <!-- {{content.id}} -->
 <img src="{{content.imageUrl}}">
-<span class="body">{{content.body}}</span> <span class="type">{{content.type}}</span>
+<div appHighlight *ngIf='content.body'> {{content.body}}
+</div>
