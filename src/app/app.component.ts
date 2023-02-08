@@ -33,6 +33,10 @@ export class AppComponent {
 
     processContent (content: Content):void { console.log(content.body);
     }
+
+    clickEvent(){
+      
+    }
 }
 
 
